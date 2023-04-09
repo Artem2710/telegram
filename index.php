@@ -8,7 +8,7 @@ echo 12121;
 $data = json_decode(file_get_contents('php://input'), TRUE);
 
 
-$handle = fopen($file, 'w');
+$handle = fopen('file.txt', 'w');
 
 // write the data to the file
 fwrite($handle, $data);
